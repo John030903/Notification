@@ -1,4 +1,4 @@
-import streamlit
+import streamlit as st
 import datetime
 import smtplib
 import ssl
@@ -6,6 +6,7 @@ from email.message import EmailMessage
 from lunarcalendar import  Lunar
 import schedule
 
+st.header('Notification App')
 def send_mail():
     today = datetime.datetime.now()
     print(today.time())
