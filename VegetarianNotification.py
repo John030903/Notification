@@ -36,4 +36,4 @@ st.header('Notification App')
 schedule.every().day.at("05:00").do(send_email)
 while True:
     schedule.run_pending()
-    time.sleep(1)
+    time.sleep(1000)
