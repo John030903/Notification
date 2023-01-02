@@ -29,7 +29,7 @@ def send_email():
         smtp.sendmail(email_sender, email_receiver, em.as_string())
 st.header('Notification App')
 # schedule.every().day.at("05:00").do(send_email)
-schedule.every().senconds.do(send_email)
+schedule.every(3).seconds.do(send_email)
 while True:
     schedule.run_pending()
     time.sleep(1)
